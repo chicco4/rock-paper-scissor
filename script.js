@@ -1,7 +1,16 @@
-const myArray = ["rock", "paper", "scissors"];
+
+let playerscore = 0;
+let computerscore = 0;
 
 function computerPlay() {
-    return myArray[~~(Math.random() * myArray.length)];
+    let opt = randomIntFromInterval(1, 3);
+    if (opt==0) {
+        return "rock";
+    }
+}
+
+function randomIntFromInterval(min, max) { // min and max included 
+    return Math.floor(Math.random() * (max - min + 1) + min)
 }
 
 function playRound(playerSelection, computerSelection) {
@@ -40,21 +49,19 @@ function playRound(playerSelection, computerSelection) {
 }
 
 function game() {
-    let playerscore = 0;
-    let computerscore = 0;
 
     for (let i = 0; i < 5; i++) {
-        let sign = prompt("enter sign: ","rock");
+        let sign = prompt("enter sign: ", "rock");
         let util = playRound(sign, computerPlay());
         console.log(util);
-        if(util.includes("player")){
+        if (util.includes("player")) {
             playerscore++;
         }
-        if(util.includes("computer")){
+        if (util.includes("computer")) {
             computerscore++;
         }
     }
-    console.log("player: "+playerscore+", computer: "+computerscore);
+    console.log("player: " + playerscore + ", computer: " + computerscore);
     if (playerscore > computerscore) {
         console.log("player wins");
     } else {

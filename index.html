@@ -1,17 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>rock paper scissors</title>
-    <link rel=¨stylesheet¨ type=¨text/css¨ href=¨style.css¨>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    
-    <button onclick = "game()">start game</button>
-    <div>before clicking make sure to oper the dev tools and enter the consolo section</div>
 
+<body>
+    <div class="container"></div>
+    <h1 class="heading">Rock, Paper, And Scissors</h1>
+    <div class="score">
+        <div class="player-score">0</div>
+        <div class="computer-score">0</div>
+    </div>
+    <div class="message"></div>
+    <div class="cards">
+        <div class="card">
+            <img src="images/rock-white.png" alt="rock" class="card-image" data-image="rock" />
+            <div class="text">rock</div>
+        </div>
+        <div class="card">
+            <img src="images/paper-white.png" alt="paper" class="card-image" data-image="paper" />
+            <div class="text">paper</div>
+        </div>
+        <div class="card">
+            <img src="images/scissors-white.png" alt="scissors" class="card-image" data-image="scissors" />
+            <div class="text">scissors</div>
+        </div>
+    </div>
+    <div class="dashboard">
+        <div class="side">
+            <h2 class="heading">Player</h2>
+            <div class="player-selection">
+                <!-- <p>Rock</p> -->
+            </div>
+        </div>
+        <div class="side">
+            <h2 class="heading">Computer</h2>
+            <div class="computer-selection">
+                <!-- <p>Paper</p> -->
+            </div>
+        </div>
+    </div>
+    </div>
     <script src="script.js"></script>
 </body>
+
 </html>
