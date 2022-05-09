@@ -33,7 +33,7 @@ body {
 }
 
 .card-image:hover {
-  top: -5px;
+  top: -10px;
 }
 
 .card-text {
@@ -55,7 +55,7 @@ body {
 .message {
   text-align: center;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 700;
   margin-bottom: 20px;
 }
 
@@ -75,4 +75,5 @@ body {
 .headindg-sub {
   font-size: 35px;
   font-weight: 500;
+  margin-bottom: 0px;
 }
