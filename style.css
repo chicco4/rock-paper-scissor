@@ -30,6 +30,8 @@ body {
   margin-bottom: 10px;
   cursor: pointer;
   position: relative;
+  height: 200px;
+  width: auto;
 }
 
 .card-image:hover {
