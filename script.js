@@ -4,7 +4,7 @@ let computerscore = 0;
 
 function computerPlay() {
     let opt = randomIntFromInterval(1, 3);
-    if (opt==0) {
+    if (opt == 0) {
         return "rock";
     }
 }
