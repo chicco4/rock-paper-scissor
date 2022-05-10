@@ -12,7 +12,7 @@ let computerScore = 0;
 // Start Game when user clicks on an image
 images.forEach((image) =>
     image.addEventListener('click', () => {
-        if (playerScore >= 3 || computerScore >= 3) {
+        if (playerScore >= 5 || computerScore >= 5) {
             return;
         }
         game(image.dataset.image);
@@ -94,10 +94,10 @@ function game(playerSelection) {
     selectionComputer.appendChild(createParagWithText(computerSelection));
 
 
-    if (playerScore > 5) {
+    if (playerScore >= 5) {
         message.textContent = "Game Over. You Win!";
     }
-    if (computerScore > 5) {
+    if (computerScore >= 5) {
         message.textContent = "Game Over. You Lose!";
     }
 }
